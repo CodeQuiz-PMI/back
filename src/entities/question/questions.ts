@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
-import { Section } from "./section";
+import { Section } from "..";
 
 @Entity("questions")
 export class Question {

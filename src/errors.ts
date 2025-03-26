@@ -15,24 +15,19 @@ export const handleErrors = (
   request: Request,
   response: Response,
   next: NextFunction
-) => {
+): void => {
   if (error instanceof AppError) {
     console.log(error.statusCode);
-    return response.status(error.statusCode).json({
+    response.status(error.statusCode).json({
       message: error.message,
     });
   }
 
   if (error instanceof ZodError) {
-    return response.status(400).json(error.flatten().fieldErrors);
+    response.status(400).json(error.flatten().fieldErrors);
   }
 
-  if (error.message.includes("invalid input syntax for type uuid")) {
-    return response.status(404).json({
-      message: "invalid UUID",
-    });
-  }
-  return response.status(500).json({
+  response.status(500).json({
     message: "Internal server error",
   });
 };

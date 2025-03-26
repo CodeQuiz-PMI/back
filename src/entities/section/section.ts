@@ -5,8 +5,7 @@ import {
   ManyToOne,
   OneToMany,
 } from "typeorm";
-import { Level } from "./level";
-import { Question } from "./questions";
+import { Level, Question } from "..";
 
 @Entity("sections")
 export class Section {

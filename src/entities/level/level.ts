@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
-import { Section } from "./section";
+import { Section } from "..";
 
 @Entity("levels")
 export class Level {
