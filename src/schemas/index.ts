@@ -3,6 +3,7 @@ import {
   userReturnWithoutPassSchema,
   userReturnSchema,
   userUpdateSchema,
+  userReturnAllSchema,
 } from "./user/user.schema";
 
 export {
@@ -10,4 +11,5 @@ export {
   userReturnWithoutPassSchema,
   userReturnSchema,
   userUpdateSchema,
+  userReturnAllSchema,
 };

@@ -20,3 +20,5 @@ export const userReturnSchema = userCreateSchema.extend({
 export const userReturnWithoutPassSchema = userReturnSchema.omit({
   password: true,
 });
+
+export const userReturnAllSchema = z.array(userReturnWithoutPassSchema);

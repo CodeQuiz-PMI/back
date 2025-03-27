@@ -1,6 +1,7 @@
 import { z } from "zod";
 import {
   userCreateSchema,
+  userReturnAllSchema,
   userReturnSchema,
   userReturnWithoutPassSchema,
   userUpdateSchema,
@@ -12,3 +13,4 @@ export type tUserReturn = z.infer<typeof userReturnSchema>;
 export type tUserReturnWithoutPassSchema = z.infer<
   typeof userReturnWithoutPassSchema
 >;
+export type tUserReturnAll = z.infer<typeof userReturnAllSchema>;

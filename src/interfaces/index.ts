@@ -1,6 +1,7 @@
 import {
   tUserRequest,
   tUserReturn,
+  tUserReturnAll,
   tUserReturnWithoutPassSchema,
   tUserUpdateRequest,
 } from "./user/user.interface";
@@ -10,4 +11,5 @@ export {
   tUserReturn,
   tUserReturnWithoutPassSchema,
   tUserUpdateRequest,
+  tUserReturnAll,
 };
