@@ -3,6 +3,7 @@ import { userDeleteService } from "./user/DeleteUser.service";
 import { userListById } from "./user/ListUserById.service";
 import { userCreateService } from "./user/createUser.service";
 import { userListAllService } from "./user/ListUserAll.service";
+import { loginService } from "./login/login.service";
 
 export {
   userCreateService,
@@ -10,4 +11,5 @@ export {
   userDeleteService,
   userListById,
   userListAllService,
+  loginService,
 };
