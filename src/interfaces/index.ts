@@ -1,3 +1,4 @@
+import { tLogin } from "./login/login.interface";
 import {
   tUserRequest,
   tUserReturn,
@@ -12,4 +13,5 @@ export {
   tUserReturnWithoutPassSchema,
   tUserUpdateRequest,
   tUserReturnAll,
+  tLogin,
 };
