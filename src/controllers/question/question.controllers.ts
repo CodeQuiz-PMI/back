@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
-import { questionCreateService, questionListAllService, questionListByIdService } from "../../services";
+import { questionCreateService, questionListAllService, questionListByIdService, questionUpdateService } from "../../services";
+import { questionDeleteService } from "../../services/question/questionDelete.service";
 
 export const questionCreateController = async(request: Request, response: Response): Promise<any> => {
     const questionData = request.body
@@ -27,6 +28,6 @@ export const questionUpdateController = async(request: Request, response: Respon
 
 export const questionDeleteController = async(request: Request, response: Response): Promise<any> => {
     const questionId = Number(request.params.id)
-    await questionUpdateService(questionId)
+    await questionDeleteService(questionId)
     return response.json().status(204)
 }

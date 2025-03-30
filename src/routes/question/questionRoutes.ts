@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { questionCreateController, questionListAllController } from "../../controllers";
+import { questionCreateController, questionListAllController, questionListIdController, questionUpdateController } from "../../controllers";
+import { questionDeleteService } from "../../services";
 export const questionRoutes: Router = Router();
 questionRoutes.post("", questionCreateController);
 questionRoutes.get("", questionListAllController);
-questionRoutes.get("/:id");
-questionRoutes.patch("/:id");
-questionRoutes.delete("/:id");
+questionRoutes.get("/:id", questionListIdController);
+questionRoutes.patch("/:id", questionUpdateController);
+questionRoutes.delete("/:id", questionDeleteService);

@@ -7,6 +7,8 @@ import { loginService } from "./login/login.service";
 import { questionCreateService } from "./question/createQuestion.service";
 import { questionListAllService } from "./question/listQuestionAll.service";
 import { questionListByIdService } from "./question/questionListID.service";
+import { questionUpdateService } from "./question/questioUpdate.service";
+import { questionDeleteService } from "./question/questionDelete.service";
 
 export {
   userCreateService,
@@ -18,4 +20,6 @@ export {
   questionCreateService,
   questionListAllService,
   questionListByIdService,
+  questionUpdateService,
+  questionDeleteService,
 };
