@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use("/user", userRoutes);
+app.use("/question", questionRoutes);
 
 app.use(handleErrors);
 
