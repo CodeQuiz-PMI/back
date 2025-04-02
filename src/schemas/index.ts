@@ -1,4 +1,5 @@
 import { loginSchema } from "./login/login.schema";
+import { questionSchema, questionUpdateSchema, questionReturnSchema, questionReturnAllSchema } from "./question/question.schema";
 import {
   userCreateSchema,
   userReturnWithoutPassSchema,
@@ -14,4 +15,8 @@ export {
   userUpdateSchema,
   userReturnAllSchema,
   loginSchema,
+  questionSchema,
+  questionUpdateSchema,
+  questionReturnSchema,
+  questionReturnAllSchema,
 };
