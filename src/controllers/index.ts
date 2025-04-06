@@ -1,4 +1,5 @@
 import { loginController } from "./login/login.controller";
+import { questionCreateController, questionListAllController, questionListIdController, questionUpdateController, questionDeleteController } from "./question/question.controllers";
 import {
   userCreateController,
   userDeleteController,
@@ -14,4 +15,9 @@ export {
   userUpdateController,
   userDeleteController,
   loginController,
+  questionCreateController,
+  questionListAllController,
+  questionListIdController,
+  questionUpdateController,
+  questionDeleteController,
 };
