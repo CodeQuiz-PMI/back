@@ -1,3 +1,4 @@
+import { levelDeleteController, levelDeleteService, levelListAllController, levelListAllService, levelListByIdService, levelUpdateController } from "../services";
 import { loginController } from "./login/login.controller";
 import {
   userCreateController,
@@ -14,4 +15,11 @@ export {
   userUpdateController,
   userDeleteController,
   loginController,
+  levelDeleteService,
+  levelListAllController,
+  levelListAllService,
+  levelListByIdService,
+  levelUpdateController,
+  levelDeleteController,
 };
+
